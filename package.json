@@ -1,9 +1,22 @@
 {
-  "name": "node-db4-project",
+  "name": "db4-project",
   "version": "1.0.0",
   "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Workintech/node-db4-project.git"
+  },
+  "description": "Projeyi forklayın, clonela'yın ve sık sık commitleyin.",
+  "bugs": {
+    "url": "https://github.com/Workintech/node-db4-project/issues"
+  },
+  "homepage": "https://github.com/Workintech/node-db4-project#readme",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^2.4.2",
+    "sqlite3": "^5.1.4"
   }
 }
