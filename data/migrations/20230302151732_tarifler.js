@@ -56,6 +56,6 @@ exports.down = function (knex) {
   return knex.schema
     .dropTableIfExists("adimlar_icindekiler")
     .dropTableIfExists("icindekiler")
-    .dropTableIfExists("adimlar")
+    .dropTableIfExists("adim")
     .dropTableIfExists("tarifler");
 };

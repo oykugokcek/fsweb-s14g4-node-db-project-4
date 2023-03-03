@@ -4,9 +4,7 @@
  */
 exports.seed = async function (knex) {
   // Deletes ALL existing entries
-  await knex("tarifler").del();
   await knex("tarifler").insert([{ tarif_adi: "Spagetti Bolonez" }]);
-  await knex("adim").del();
   await knex("adim").insert([
     {
       tarif_id: 1,
@@ -19,12 +17,10 @@ exports.seed = async function (knex) {
       adim_talimati: "1 yemek kaşığı zeytinyağı ekleyin",
     },
   ]);
-  await knex("icindekiler").del();
   await knex("icindekiler").insert([
     { icindekiler_adi: "zeytinyağı", miktar: 0.014 },
   ]);
 
-  await knex("adimlar_icindekiler").del();
   await knex("adimlar_icindekiler").insert([
     { adim_id: 12, icindekiler_id: 26 },
     { adim_id: 11, icindekiler_id: 27 },
