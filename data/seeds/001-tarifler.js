@@ -22,8 +22,8 @@ exports.seed = async function (knex) {
   ]);
 
   await knex("adimlar_icindekiler").insert([
-    { adim_id: 12, icindekiler_id: 26 },
-    { adim_id: 11, icindekiler_id: 27 },
+    { adim_id: 1, icindekiler_id: 1 },
+    { adim_id: 1, icindekiler_id: 2 },
   ]);
 };
 
